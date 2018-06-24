@@ -1,0 +1,1 @@
+This is a collection of information designed to make my life as a developer easier
