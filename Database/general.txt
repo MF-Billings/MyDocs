@@ -1,0 +1,7 @@
+Database
+
+
+MySQL
+--------------------------------------------------------------
+
+- FULL JOINs are not supported.  To obtain the same effect you can use union with left and right joins

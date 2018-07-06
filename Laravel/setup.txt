@@ -1,0 +1,13 @@
+Getting Started
+--------------------------------------------------------------
+
+Mac
+
+Obstacle 1) Loading the public page for my first app threw the following error:
+
+UnexpectedValueException:
+The stream or file "/Applications/XAMPP/xamppfiles/htdocs/laravel/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied
+
+Solution was to run 'sudo chmod -R 777 storage/*' from within the root of the application's folder.  
+
+SO answer: https://stackoverflow.com/questions/49131156/laravel-not-work-in-xampp-mac-os?rq=1
