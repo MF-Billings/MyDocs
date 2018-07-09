@@ -1,0 +1,22 @@
+STEP 1: Create a repository
+
+STEP 2: Import working projecct
+
+First, make sure that your project structure is as follows
+
+/tmp/
+   myproject/
+      branches/
+      tags/
+      trunk/
+         foo.c
+         bar.c
+         Makefile
+         …
+
+Now run svn import to copy the files into the repository.  You have to specify the path to the repository using a URL.  Additional information about repository urls is contained in eponymous file.
+
+Ex. local repository
+$ svn import /tmp/myproject file:///var/svn/repos/myproject \
+      -m "initial import"
+

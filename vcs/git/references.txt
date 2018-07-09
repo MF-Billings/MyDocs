@@ -1,0 +1,5 @@
+interactive page of various git storage entities,
+http://ndpsoftware.com/git-cheatsheet.html
+
+how to escape a git mess,
+http://justinhileman.info/article/git-pretty/git-pretty.png

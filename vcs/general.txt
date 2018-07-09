@@ -1,0 +1,1 @@
+A working copy is a local copy of a particular version of a user's VCS-managed data upon which that user is free to work

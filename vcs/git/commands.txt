@@ -1,0 +1,2 @@
+// Make exact copy of remote
+git reset --hard [name of remote]

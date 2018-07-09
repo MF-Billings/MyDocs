@@ -1,0 +1,4 @@
+eg. employee table; manager_id points to another employee id
+- starts at 24m
+https://www.codingblocks.net/podcast/all-your-database-are-belong-to-us/
+https://en.wikipedia.org/wiki/Nested_set_model

@@ -1,7 +1,12 @@
-Database
+common table expression - a query result stored into memory which you can query later, after which the query is discarded from memory
 
+schema - blueprint of how the database is constructed (divided into database tables in the case of relational databases)
 
 MySQL
 --------------------------------------------------------------
 
 - FULL JOINs are not supported.  To obtain the same effect you can use union with left and right joins
+
+
+References
+--------------------------------------------------------------
