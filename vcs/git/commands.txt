@@ -1,2 +1,9 @@
 // Make exact copy of remote
 git reset --hard [name of remote]
+
+// Move (or rename)
+git mv <old name> <new name>
+
+// case sensitive rename
+git mv casesensitive tmp
+git mv tmp CaseSensitive
