@@ -1,12 +1,22 @@
-common table expression - a query result stored into memory which you can query later, after which the query is discarded from memory
+- a general rule of thumb for indexing is to index any fields that will be used in joins or WHERE
 
-schema - blueprint of how the database is constructed (divided into database tables in the case of relational databases)
+- to update fields in a logical table that consists of multiple tables you can join them as you would in a select query //untested
+
+- performing queries within a loop creates substantial overhead due in part to the constants DB reconnects between queries
+
+- some subqueries can kill performance with even small datasets.
 
 MySQL
---------------------------------------------------------------
+// --------------------------------------------------------------
 
 - FULL JOINs are not supported.  To obtain the same effect you can use union with left and right joins
 
+Select members of a logical group with the largest date w/n group
+
+left join the table onto itself using the column(s) you're grouping on in the ON clause of the join and adding table1.date > table2.date WHERE table1.date IS NULL andd any other optional filters
+
+(https://stackoverflow.com/questions/612231/how-can-i-select-rows-with-maxcolumn-value-distinct-by-another-column-in-sql)
+
 
 References
---------------------------------------------------------------
+// --------------------------------------------------------------

@@ -1,0 +1,14 @@
+LINUX
+
+display current time:
+
+>date
+
+SEARCHING -----------------------------------------------------------------------------------
+
+find all occurences of PATTERN in all subdirectories of the current directory
+
+>grep -r PATTERN .
+
+    exclude directories:
+    >grep -r --exclude-dir=.svn PATTERN .

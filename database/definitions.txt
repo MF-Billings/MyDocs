@@ -1,0 +1,3 @@
+common table expression - a query result stored into memory which you can query later, after which the query is discarded from memory
+
+schema - blueprint of how the database is constructed (divided into database tables in the case of relational databases)

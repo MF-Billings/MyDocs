@@ -1,0 +1,3 @@
+merge pull commits from other repositories into your working copy
+eg. trunk -> branch, branch -> trunk, branch -> branch
+

@@ -1,0 +1,1 @@
+when trying to filter out html character entities in a <select> use ng-repoeat on an <option> instead of ng-options and bind the value with ng-bind-html

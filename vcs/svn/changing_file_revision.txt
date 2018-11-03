@@ -1,0 +1,8 @@
+Tortoise SVN
+// --------------------------------------------------------------
+
+Revert working copy to a previous revision
+
+- use update to revision
+
+# you can also copy a versioned file into the working copy through the repo-browser by opening the context menu for the desired file and selecting 'Copy as working copy...'

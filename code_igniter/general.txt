@@ -1,4 +1,6 @@
-CI won't let you nest controller php files within controllers by default (at least if .htaccess is used to remove index.php from the URL).  https://degreesofzero.com/article/controllers-in-sub-sub-folders-in-codeigniter.html
+CI won't let you nest controller php files within controllers by default (at least if .htaccess is used to remove index.php from the URL).  https://degreesofzero.com/article/controllers-in-sub-sub-folders-in-codeigniter.html\
+
+$this->db // loads through autoload.php
 
 ------------------------------------------------------------------------------------
 Call to undefined function mysql_pconnect()

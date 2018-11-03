@@ -1,0 +1,6 @@
+
+
+- ServerRoot can be found in httpd.conf
+
+- define additional config files using Include and IncludeOptional directives (includes folders)
+e.g. IncludeOptional conf/myAdditions/*.conf

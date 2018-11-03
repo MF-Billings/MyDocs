@@ -1,11 +1,27 @@
+Techniques
+--------------------------------------------------------------
+
+// creating and checking out a branch from the current trunk state
+
+svn copy http://svn.example.com/repos/calc/trunk \
+           http://svn.example.com/repos/calc/branches/newbranch \
+           -m "Create branch 'newbranch'."
+Committed revision 353.
+$ svn switch ^/calc/branches/newbranch
+At revision 353.
+
 Notes
 --------------------------------------------------------------
+
+- do NOT create a branch that is not directly branched from trunk unless you intend to merge that branch into the ancestors between itself and trunk. Doing this might make your life miserable.
 
 - a(n svn) repository won't necessarily show you the files it's versioned by looking inside; they're stored in a database.  But the repository's imaginary filesystem now contains a top-level directory named myproject, which in turn contains your data.
 
 - Importing a directory does not modify the source directory in any way.  You can even delete it if you want and still have access the versioned copy through your repository by making a 'working copy'.
 
 - revision numbers are global.  Revision number n is the state of the repository after the nth commit.  It is also the name of an implicit change set.
+
+- if a merge produces undesired changes it can be undone with 'svn revert . -R'.  This is because a merge has no effect on the repository until the branch that received the merge is committed.  
 
 - mixed revisions occur when one of more of your working copy's files are modified, preventing said copy from being an exact duplicate of any particular revision.  If you were to compare your working copy to every revision in the repository you would find it's not an exact match to any of them.
 
@@ -14,19 +30,3 @@ Quality of Life
 --------------------------------------------------------------
 
 - The caret (^) can be used to avoid having to type out the entire /trunk URL.  This was introduced in SVN 1.6
-
-
-Definitions
---------------------------------------------------------------
-
-changeset 
-- a collection of changes with a unique name
-- a patch with a name you can refer to
-
-merge - the act of replicating changes from one branch to another
-
-revert - discard changes you haven't yet committed and return the file to its state before you started editing.  In other words it changes back to the committed version you started with.  Discarded files are sent to the Recycle bin.
-
-working copy 
-- a local version of the repository which can be freely modified by the user
-- a clean working copy is one with no local modifications

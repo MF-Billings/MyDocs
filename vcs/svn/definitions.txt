@@ -1,0 +1,14 @@
+Definitions
+--------------------------------------------------------------
+
+changeset 
+- a collection of changes with a unique name
+- a patch with a name you can refer to
+
+merge - the act of replicating changes from one branch to another
+
+revert - discard changes you haven't yet committed and return the file to its state before you started editing.  In other words it changes back to the committed version you started with.  Discarded files are sent to the Recycle bin.
+
+working copy 
+- a local version of the repository which can be freely modified by the user
+- a clean working copy is one with no local modifications

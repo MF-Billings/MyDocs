@@ -1,0 +1,1 @@
+// using a function with interpolation can cause the fucntion to be evaluated multple times during the digest cycle

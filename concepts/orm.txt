@@ -1,0 +1,6 @@
+ORM - see object-relational mapping
+
+object-relational mapping
+- the subject of mapping the relationsional world (database with rows and columns) to the object world
+- a technique that lets you query and manipulate data from a database using an object-oriented paradigm
+- uses a 'data layer' to handle translation between the OO (model classes) and relational (database). This is typically a library written in the OO language that it's part of.
